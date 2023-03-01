@@ -1,3 +1,4 @@
 # Billionaire-Diary-resources
 
-### Billionaire API: [https://forbes400.onrender.com/](https://forbes400.onrender.com/)
+
+### live link : [https://mrlaboratory.github.io/billionaire-diary] (https://mrlaboratory.github.io/billionaire-diary)

@@ -1,15 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billionaire dairy</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        module.exports = {
+            plugins: {
+                tailwindcss: {},
+                autoprefixer: {},
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="container">
+
+    <!-- this is header section  -->
+    <header>
+
+    </header>
 
 
-    
+    <!-- main section started  -->
+    <main>
+
+
+        <section class="grid grid-cols-1 lg:grid-cols-4 gap-3">
+            <div class="left bg-[#0E1B34] text-center pt-5 h-screen">
+                <h2 class="text-[#D9D9D9] text-3xl font-bold">Billionaire</h2>
+                <h3 class="text-[#d9d9d9cc] text-2xl">Dairy</h3>
+                <div class="button-list mt-3 p-5">
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Add a
+                        user</button>
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Double
+                        Money</button>
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Sort By Rank
+                    </button>
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Calculate Entire
+                        Wealth</button>
+
+                </div>
+                <hr class="bg-gray-400">
+                <div class="button-list mt-3 p-5">
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Show All
+                        Billionaires</button>
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Richest by
+                        industry</button>
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Sort By Rank
+                    </button>
+                    <button class="btn btn-block bg-white text-black hover:bg-white hover:text-black">Richest by
+                        states</button>
+
+                </div>
+
+            </div>
+            <div class="right col-span-3 h-screen w-full">
+                <div class="navbar bg-base-100 w-full">
+
+                    <div class="flex justify-between gap-2 w-full">
+                        <div class="form-control">
+                            <input type="text" placeholder="Search" class="input input-bordered" />
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                                <div class="w-10 rounded-full">
+                                    <img src="images/logo/logo1.png" />
+                                </div>
+                            </label>
+                            <ul tabindex="0"
+                                class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                                <li>
+                                    <a class="justify-between">
+                                        Profile
+                                        <span class="badge">New</span>
+                                    </a>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#D9D9D9] rounded-lg p-7 mt-4">
+                    <h2 class="text-2xl">Hello, User!</h2>
+                    <div class="overflow-x-auto w-full mt-5">
+                        <table class="table w-full ">
+                            <!-- head -->
+                            <thead>
+                                <tr>
+                                    <th>Person </th>
+                                    <th>Citizenship</th>
+                                    <th>Industry</th>
+                                    <th>Rank</th>
+                                    <th>Wealth</th>
+                                </tr>
+                            </thead>
+                            <tbody class="border-t-2 border-black">
+                                <!-- row 1 -->
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="avatar">
+                                                <div class="mask mask-squircle w-12 h-12">
+                                                    <img src="/tailwind-css-component-profile-2@56w.png"
+                                                        alt="Avatar Tailwind CSS Component" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="font-bold">Hart Hagerty</div>
+                                                
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-md">United States</div>
+                                    </td>
+                                    <td>
+                                        Zemlak, Daniel and Leannon
+                                        <br />
+                                        <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                                    </td>
+                                    <td> <div class="text-md"># 12</div> </td>
+                                    <th>
+                                    
+                                        <div class="text-md">$80526.39</div> 
+                                        
+                                    </th>
+                                </tr>
+
+                            </tbody>
+                            <!-- foot -->
+                            <tfoot>
+                                <tr>
+                                    <th>Total </th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                 
+                                    <th>$205873.27</th>
+                                </tr>
+                            </tfoot>
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+<script src="index.js"></script>
 </body>
+
 </html>
