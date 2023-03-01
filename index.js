@@ -80,7 +80,7 @@ const displaySingleInfo = (data, n) => {
 <ul >
 
 </ul>
-<div class="flex justify-between p-10 gap-10" >
+<div class="flex justify-between p-10 gap-5" >
 <div>
 <img class="rounded" src="${squareImage}">
 <p><b>Source: </b>${source} </p>
