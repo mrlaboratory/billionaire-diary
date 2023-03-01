@@ -27,7 +27,7 @@
 
 
     <!-- main section started  -->
-    <main>
+    <main class="relative">
 
 
         <section class="grid grid-cols-1 lg:grid-cols-4 gap-3">
@@ -88,7 +88,7 @@
                 </div>
                 <div class="bg-[#D9D9D9] rounded-lg p-7 mt-4">
                     <h2 class="text-2xl">Hello, User!</h2>
-                    <div class="overflow-x-auto w-full mt-5">
+                    <div class="overflow-x-scroll h-[500px] w-full mt-5">
                         <table class="table w-full ">
                             <!-- head -->
                             <thead>
@@ -100,38 +100,8 @@
                                     <th>Wealth</th>
                                 </tr>
                             </thead>
-                            <tbody class="border-t-2 border-black">
-                                <!-- row 1 -->
-                                <tr>
-                                    <td>
-                                        <div class="flex items-center space-x-3">
-                                            <div class="avatar">
-                                                <div class="mask mask-squircle w-12 h-12">
-                                                    <img src="/tailwind-css-component-profile-2@56w.png"
-                                                        alt="Avatar Tailwind CSS Component" />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="font-bold">Hart Hagerty</div>
-                                                
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-md">United States</div>
-                                    </td>
-                                    <td>
-                                        Zemlak, Daniel and Leannon
-                                        <br />
-                                        <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                                    </td>
-                                    <td> <div class="text-md"># 12</div> </td>
-                                    <th>
-                                    
-                                        <div class="text-md">$80526.39</div> 
-                                        
-                                    </th>
-                                </tr>
+                            <tbody id="billionaire-container" class="border-t-2 border-black  overflow-scroll">
+                             
 
                             </tbody>
                             <!-- foot -->
@@ -152,6 +122,23 @@
 
             </div>
         </section>
+
+
+
+
+
+<section id="persondiv" class="absolute top-0 left-0 z-30 flex justify-center items-center w-screen h-screen hidden ">
+    <div class="flex w-8/12 relative">
+        <div class="w-full bg-white rounded shadow-lg border" >
+                <label id="persondivhide" class="btn absolute top-0 right-0">Close</label>
+
+          <div class="pt-5" id="persondivbody">
+           
+          </div>
+          
+        </div>
+       </div>
+</section>
 
     </main>
 
