@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richest by State</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        module.exports = {
+            plugins: {
+                tailwindcss: {},
+                autoprefixer: {},
+            }
+        }
+    </script>
+</head>
+
+<body class="container">
+
+    <header>
+        <div class="navbar bg-base-100 flex justify-evenly">
+            <div class="">
+                <select id="stateid" class="select select-bordered w-full max-w-xs">
+                    <option value="hawaii" selected>Hawaii</option>
+                    <option value="texas" >Texas</option>
+                    <option value="washington">Washington</option>
+                    <option value="zhejiang">Zhejiang</option>
+                   
+                  </select>
+            </div>
+
+                <div>
+                    <a class="btn btn-ghost normal-case text-xl">Richest by State</a>
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="images/logo/logo1.png" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="flex justify-center w-screen">
+<div id="person-contaner" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4 mt-4">
+
+
+</div>
+
+
+
+        </section>
+
+        <section id="moreperson" class="w-screen flex justify-center">
+           
+        </section>
+
+
+
+    </main>
+
+
+
+<script src="state.js"></script>
+</body>
+
+</html>
